@@ -6,32 +6,24 @@ package mvc_cine;
 
 import java.util.Scanner;
 
-import java.util.Scanner;
-
 public class Vista {
-    public static Scanner objscanner=new Scanner(System.in);
-    public static String nombre=" ";
-    public static int edad=0;
-    public static int cedula=0;
-    public static String correo;
-    
-    public Vista(){
-       
+    private Scanner scanner = new Scanner(System.in);
+
+    public Usuario pedirDatosUsuario() {
+        System.out.println("Ingrese su nombre:");
+        String nombre = scanner.nextLine();
+        System.out.println("Ingrese su edad:");
+        int edad = scanner.nextInt();
+        System.out.println("Ingrese su cedula:");
+        int cedula = scanner.nextInt();
+        scanner.nextLine(); // Limpiar buffer
+        System.out.println("Ingrese su correo:");
+        String correo = scanner.nextLine();
+
+        return new Usuario(nombre, edad, cedula, correo);
     }
-    
-    public pedirDatos(){
-        System.out.println("ingrese su nombre porfavor");
-        Vista.nombre=objscanner.nextLine();
-        System.out.println("ingrese su edad");
-        Vista.edad=objscanner.nextInt();
-        System.out.println("ingrese su cedula sin puntos o comas porfavor");
-        Vista.cedula=objscanner.nextInt();
-        System.out.println("ingrese su correo electronico");
-        objscanner.nextLine();
-        Vista.correo=objscanner.nextLine();
-        Usuario objusuario=new Usuario(Vista.nombre,Vista.edad,Vista.cedula,Vista.correo);
-        objusuario.Reservar(Vista.correo);
-        objusuario.imprimirdatos(Vista.correo);
+
+    public void mostrarMensaje(String mensaje) {
+        System.out.println(mensaje);
     }
-    
 }

@@ -4,15 +4,36 @@
  */
 package mvc_cine;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 /**
  *
  * @author SENA
  */
 public class Asientos {
-    public static int asientosocupados;
-    public static String nombre;
-    public Asientos(){
-        Asientos.asientosocupados=0;
-        Asientos.nombre=" ";
+    private int numero;
+    private boolean ocupado;
+    private int [] listaAsientosdisponibles;
+
+    public Asientos(int numero) {
+        this.listaAsientosdisponibles=new int[20];
+        for(int i=0;i<this.listaAsientosdisponibles.length;i++){
+            this.listaAsientosdisponibles[i]=i+1;
+        }
+        System.out.println(Arrays.toString(this.listaAsientosdisponibles));
+        this.numero = numero;
+        this.ocupado = false;
     }
+
+    public int getNumero() {
+        return numero; 
+    }
+    public boolean isOcupado() { 
+        return ocupado; 
+    }
+    public void ocuparAsiento() { 
+        this.ocupado = true; 
+    }
+    
 }

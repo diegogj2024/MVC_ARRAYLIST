@@ -11,13 +11,19 @@ package mvc_cine;
  */
 public class Principal {
 
+    private static int resultado;
+
     
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-    }
+        Vista vista = new Vista();
+        Cine cine = new Cine();
+        Controlador controlador = new Controlador(vista, cine);
+        do{
+        resultado = controlador.iniciarReserva();
+    }while(resultado==1);}
     
 }
