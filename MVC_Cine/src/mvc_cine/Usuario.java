@@ -15,8 +15,4 @@ public class Usuario extends Persona{
         super(nombre, edad, cedula);
         Usuario.correo=correo;
     }
-    
-     public String getCorreo() {
-         return correo;
-     }
 }

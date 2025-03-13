@@ -17,14 +17,4 @@ public class Persona {
     Persona.cedula=cedula;
     }
     
-    public String getNombre() {
-        return nombre;
-    }
-    public int getEdad() {
-        return edad;
-    }
-    public int getCedula() {
-        return cedula;
-    }
-    
 }

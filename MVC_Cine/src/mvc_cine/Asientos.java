@@ -16,7 +16,6 @@ public class Asientos {
     }
     public int  ocuparAsiento(int listaAsientosocupados[]){
         for(int i=0;i<listaAsientosocupados.length;i++){
-            System.out.println(".");
             if(listaAsientosocupados[i]==0){
                 listaAsientosocupados[i]=this.numero;
                 break;
@@ -28,9 +27,5 @@ public class Asientos {
         }
         System.out.println(Arrays.toString(listaAsientosocupados));
         return 1;
-    }
-
-    public int getNumero() {
-        return numero; 
     }
 }
