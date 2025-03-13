@@ -7,18 +7,18 @@ package mvc_cine;
 import java.util.Scanner;
 
 public class Vista {
-    private Scanner scanner = new Scanner(System.in);
+    private Scanner objScanner = new Scanner(System.in);
 
     public Usuario pedirDatosUsuario() {
         System.out.println("Ingrese su nombre:");
-        String nombre = scanner.nextLine();
+        String nombre = objScanner.nextLine();
         System.out.println("Ingrese su edad:");
-        int edad = scanner.nextInt();
+        int edad = objScanner.nextInt();
         System.out.println("Ingrese su cedula:");
-        int cedula = scanner.nextInt();
-        scanner.nextLine(); // Limpiar buffer
+        int cedula = objScanner.nextInt();
+        objScanner.nextLine();
         System.out.println("Ingrese su correo:");
-        String correo = scanner.nextLine();
+        String correo = objScanner.nextLine();
 
         return new Usuario(nombre, edad, cedula, correo);
     }
