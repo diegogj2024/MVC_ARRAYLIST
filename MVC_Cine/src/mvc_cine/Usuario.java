@@ -16,5 +16,7 @@ public class Usuario extends Persona{
         Usuario.correo=correo;
     }
     
-     public String getCorreo() { return correo; }
+     public String getCorreo() {
+         return correo;
+     }
 }

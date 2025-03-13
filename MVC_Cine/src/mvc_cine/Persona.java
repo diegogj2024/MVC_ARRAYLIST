@@ -4,10 +4,7 @@
  */
 package mvc_cine;
 
-/**
- *
- * @author SENA
- */
+
 public class Persona {
     
     public static String nombre;

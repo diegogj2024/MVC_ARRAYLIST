@@ -7,11 +7,6 @@ package mvc_cine;
 import java.util.Arrays;
 
 
-
-/**
- *
- * @author SENA
- */
 public class Asientos {
     private int numero;
 
