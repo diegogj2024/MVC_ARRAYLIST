@@ -11,7 +11,7 @@ public class Principal {
     public static void main(String[] args) {
         Principal.resultados=new String[100];
         Controlador objControlador=new Controlador();
-        objControlador.iniciar(Principal.resultados);
+            objControlador.iniciar(Principal.resultados);
     }
     
 }

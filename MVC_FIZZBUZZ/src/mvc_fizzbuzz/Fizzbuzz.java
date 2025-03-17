@@ -17,7 +17,6 @@ public class Fizzbuzz {
     for(int i=0;i<100;i++){
         this.guardar[i]=resultado[i];
     }
-        System.out.println(Arrays.toString(resultado));
     }
     
 }
